@@ -126,5 +126,7 @@ namespace _5_Koleksiyon
                 string name = (string)arrrTemp[i];
             }
         }
+
+       
     }
 }
