@@ -39,6 +39,30 @@ namespace _7_AnonymousTypes
             MessageBox.Show($"{kisi.Adi} {kisi.SoyAdi} {kisi.Yas}");
             // Anonim tipler dizi veya deðiþken olarkta kullanýlabilir..
             // özellikle ileride linq yapýlarý ile tercih edelir ve ciddi kolaylýklarý vardýr...
+
+
+            User user = new User();
+            user.ID = 1;
+            user.Name = "eyildirim";
+            user.Surname = "Yýldýrým";
+            user.Password = "321";
+
+
+            UserDTO dto = new UserDTO();
+            dto.Name = user.Name;
+            dto.SurName = user.Surname;
+
+
+            // Anonim Tip...
+            var dto1 = new { Name = user.Name, SurName = user.Surname };
+            var dto2 = new { Adi = user.Name, SoyAdi = user.Surname };
+
+
+
+            var user1 = new User();
+            user1.Name = "Ziya";
+            user1.Surname = "Erdoðdu";
+
         }
 
         private void button2_Click(object sender, EventArgs e)
